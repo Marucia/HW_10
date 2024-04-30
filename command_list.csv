@@ -1,0 +1,44 @@
+    1   mkdir git_clone
+    2  cd git_clone
+    3  LS -L
+    4  ls -l
+    5  git config --global user.name Marucia
+    6  git config --get user.name
+    7  git config --global user.email a1n2i3r4a5m.i@gmail.com
+    8  git config --get user.email
+    9  ls -l
+   10  git clone https://github.com/Marucia/HW_10.git
+   11  ls -l
+   12   cd HW_10
+   13  ls -l
+   14  touch text_ignore.txt
+   15  nano gitignore
+   16  git status
+   17  git add .
+   18  git status
+   19   git commit -m "added new file 1"
+   20  git status
+   21  git log
+   22  touch main_test.txt
+   23  git add .
+   24  git status
+   25   git commit -m "added new file 2"
+   26  git status
+   27  git log
+   28   git checkout -b develop
+   29  touch develop_test.txt
+   30  git add .
+   31  git status
+   32   git commit -m "added new file 3"
+   33  nano develop_test.txt
+   34  git status
+   35  git add .
+   36  git status
+   37  git commit -m "added new file 4"
+   38  git status
+   39  git checkout main
+   40  git merge develop
+   41  git push
+   42   git commit -m "added new file 5"
+   43  git log
+   44   history > command_list.csv
